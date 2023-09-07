@@ -1,0 +1,41 @@
+.section-list-galery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.section-list-galery-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.do-section {
+  padding-top: 0px;
+}
+
+.do-thumb {
+  position: relative;
+  display: flex;
+  width: 370px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.do-thumb-list {
+  position: absolute;
+  @extend %align;
+  width: 370px;
+  height: 71px;
+  background: var(--background-color-do-thumb-list);
+  bottom: 0px;
+}
+
+.work-description {
+  color: var(--color-text-do-thumb-list);
+  text-align: center;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}

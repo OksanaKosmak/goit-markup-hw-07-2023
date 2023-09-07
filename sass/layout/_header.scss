@@ -1,0 +1,131 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.menu-link-nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2196f3;
+    display: block;
+    /*margin: 0 auto;
+        margin-top: 28px;*/
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+  }
+}
+
+.menu__link-nav-portfolio {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 72px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2196f3;
+    display: block;
+    /*margin: 0 auto;
+        margin-top: 28px;*/
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+  }
+}
+
+.menu__link {
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  padding: 32px 0px;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.current {
+  color: var(--accent-color);
+}
+
+.contact-menu__link {
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  padding: 32px 0px;
+  display: flex;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.contact-menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact-menu__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.contact-menu__icon-envelope {
+  height: 12px;
+  width: 16px;
+  margin-right: 10px;
+  fill: var(--color-icon-envelope);
+
+  .contact-menu__link:hover &,
+  .contact-menu__link:focus & {
+    fill: var(--color-icon-envelope-accent);
+  }
+}
+
+.contact-menu__icon-smartphone {
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+  fill: var(--color-icon-envelope);
+
+  .contact-menu__link:hover &,
+  .contact-menu__link:focus & {
+    fill: var(--color-icon-envelope-accent);
+  }
+}

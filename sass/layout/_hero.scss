@@ -1,0 +1,28 @@
+.hero {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--background-color-hero);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/bg.jpg);
+  background-size: cover;
+}
+
+.main-title {
+  text-align: center;  
+  font-family: var(--primary-font);  
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  @include font (44px, 900, 1.36);
+}
+
+.hero-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}

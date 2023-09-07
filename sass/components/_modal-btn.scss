@@ -1,0 +1,14 @@
+.modal-button {
+  color: var(--button-text-color);
+  background-color: var(--button-background-color);
+  text-align: center;
+  font-family: var(--primary-font);  
+  @include font (16px, 700, 1.88);
+  letter-spacing: 0.96px;
+  padding: 10px 24px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 4px;
+}
